@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "question": "What is the function used to lookup a value in a table and return a corresponding value from the same row?",
+        "correct_answer": "match",
+        "incorrect_answers": [ "index", "hlookup", "vlookup"]
+    },
+    {
+        "id": 2,
+        "question": "Which formula is NOT equivalent to all of the others?",
+        "correct_answer": "=SUM(A3,A6)",
+        "incorrect_answers": [ "=A3+A4+A5+A6", "=SUM(A3:A6)", "=SUM(A3,A4,A5,A6)"]
+    },
+    {
+        "id": 3,
+        "question": "A cell contains the value 7.877 and you want it to display as 7.9. How can you accomplish this?",
+        "correct_answer": "Click the Decrease Decimal button twice.",
+        "incorrect_answers": [ "Click the Decrease Decimal button once.", "In the cells group on the Home tab, click Format > Format Cells. Then click the Alignment tab and select Right Indent", "Use the ROUND() function"]
+    },
+    {
+        "id": 4,
+        "question": "Intersection of a column an row is called ________",
+        "correct_answer": "Worksheet",
+        "incorrect_answers": [ "Cell", "Ribbon", "Page"]
+    },
+    {
+        "id": 5,
+        "question": "The NOW() function returns the current date and time as 43740.665218. Which part of this value indicates the time?",
+        "correct_answer": "665218",
+        "incorrect_answers": [ "6652", "43740", "43740.66522"]
+    }
+]
