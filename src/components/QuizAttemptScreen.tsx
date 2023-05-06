@@ -13,7 +13,7 @@ const QuizAttemptScreen = () => {
   }
 
   return (
-    <section className="p-5 flex flex-col justify-between md:justify-evenly md:items-center h-screen ">
+    <section className="p-5 flex flex-col justify-between md:justify-evenly md:items-center h-screen pb-16 ">
       <div className="space-y-5 md:w-1/3">
         <div className="flex justify-between font-rubik font-medium">
           <p className="text-xs bg-[#72C796] text-white px-5 py-1 rounded-full">

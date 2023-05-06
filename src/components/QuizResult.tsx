@@ -26,7 +26,7 @@ const QuizResult = () => {
   const showText = displayMotivationalQuote(Number(scoreFormat))
 
   return (
-    <section className=" py-8 bg-primary-color-100/30 h-screen p-5 flex flex-col justify-between ">
+    <section className=" py-8 bg-primary-color-100/30 h-screen p-5 flex flex-col justify-between pb-20 ">
       <div className="space-y-5">
         <h3 className=" text-center text-2xl font-rubik font-bold ">
           The Daily MS Excel Quiz

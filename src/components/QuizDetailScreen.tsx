@@ -10,7 +10,7 @@ const QuizDetailScreen = () => {
 
   return (
     <>
-      <section className="flex flex-col justify-between items-center h-screen">
+      <section className="flex flex-col justify-between items-center h-screen pb-10 ">
         <div className=" ">
           <img src={IllustrationImage} alt="" className=" h-52 object-cover " />
         </div>
