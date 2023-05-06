@@ -1,16 +1,16 @@
 import { useGlobalContext } from "../context/context";
-import { QuizResult } from "../components";
+import { Button, QuizResult } from "../components"
 
 const QuizAttemptScreen = () => {
-  const { questions, index, nextQuestion, resultScreen, checkAnswer, seconds } = useGlobalContext();
+  const { questions, index, nextQuestion, resultScreen, checkAnswer, seconds } =
+    useGlobalContext()
 
-  const { correct_answer, incorrect_answers, question } = questions[index];
-  const answers: (string | string[]) = [correct_answer, ...incorrect_answers];
+  const { correct_answer, incorrect_answers, question } = questions[index]
+  const answers: string | string[] = [correct_answer, ...incorrect_answers]
 
-  if(resultScreen) {
-    return <QuizResult/>
+  if (resultScreen) {
+    return <QuizResult />
   }
-
 
   return (
     <section className="p-5 flex flex-col justify-between md:justify-evenly md:items-center h-screen ">
@@ -19,7 +19,12 @@ const QuizAttemptScreen = () => {
           <p className="text-xs bg-[#72C796] text-white px-5 py-1 rounded-full">
             0{index + 1} / 0{questions.length}{" "}
           </p>
-          <p className="text-xs bg-primary-color-300 text-white px-5 py-1 rounded-full">
+          <p
+            className={`text-xs bg-primary-color-300  text-white px-5 py-1 rounded-full ${
+              seconds <= 15 &&
+              "bg-red-500 transition-all duration-300 delay-100 ease-linear "
+            } `}
+          >
             0:{Math.floor(seconds / 10)}
             {seconds % 10}
           </p>
@@ -37,15 +42,10 @@ const QuizAttemptScreen = () => {
             {answer}
           </button>
         ))}
-        <button
-          onClick={nextQuestion}
-          className=" my-5 font-rubik font-medium bg-primary-color-500 text-white block m-auto px-10 py-2 rounded-full"
-        >
-          Next
-        </button>
+        <Button onClick={nextQuestion} text="next" />
       </div>
     </section>
-  );
-};
+  )
+}
 
 export default QuizAttemptScreen;
