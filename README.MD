@@ -6,7 +6,7 @@ This is a simple quiz app built with React. The app fetches a set of questions f
 
 ## Demo
 
-You can play with the live demo app [Minute-Master.netlify.app](https://Minute-Master.netlify.app/).
+You can play with the live demo app [minute-master.netlify.app](https://minute-master.netlify.app/).
 
 
 ## Screenshots
